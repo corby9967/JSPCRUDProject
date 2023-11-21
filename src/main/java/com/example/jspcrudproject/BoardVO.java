@@ -1,14 +1,16 @@
-package com.crud.bean;
+package com.example.jspcrudproject;
 
 import java.util.Date;
 
 public class BoardVO {
 	private int seq;
+	private String category;
 	private String title;
 	private String writer;
 	private String content;
 	private Date regdate;
 	private int cnt;
+
 	
 	public int getSeq() {
 		return seq;
@@ -45,5 +47,13 @@ public class BoardVO {
 	}
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 }
